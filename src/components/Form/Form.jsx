@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import SubmitButton from './SubmitButton';
-import ViewPassButton from './ViewPassButton';
+import SubmitButton from '../Buttons/SubmitButton';
+import ViewPassButton from '../Buttons/ViewPassButton';
 import FormFields from './FormFields';
 
 const Form = ({ onSubmit, dataForm, handleChange }) => {

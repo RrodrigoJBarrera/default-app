@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from './Input';
+import Input from '../Input/Input';
 const Fields = ({ viewPassword, dataForm, handleChange }) => {
   const fields = [
     { id: 'name', text: 'Name' },

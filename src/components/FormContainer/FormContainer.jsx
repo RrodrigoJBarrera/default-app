@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import Form from './Form';
+import Form from '../Form/Form';
 const FormContainer = () => {
   const [dataForm, setDataForm] = useState({
     name: '',
