@@ -2,7 +2,7 @@ import React from 'react';
 
 const Input = ({ dataForm, handleChange, id, text, type = 'text' }) => {
   return (
-    <div>
+    <div className="">
       <label htmlFor={id}>{text}</label>
       <input
         type={type}
