@@ -72,11 +72,13 @@ const FormContainer = () => {
 
   return (
     <>
-      <Form
-        onSubmit={sendForm}
-        dataForm={dataForm}
-        handleChange={handleChange}
-      ></Form>
+      <div className="flex items-center justify-center h-screen bg-slate-800">
+        <Form
+          onSubmit={sendForm}
+          dataForm={dataForm}
+          handleChange={handleChange}
+        ></Form>
+      </div>
     </>
   );
 };

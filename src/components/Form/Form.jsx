@@ -10,19 +10,22 @@ const Form = ({ onSubmit, dataForm, handleChange }) => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className="bg-slate-500 p-5 rounded shadow-xl">
       <div className="flex-row space-y-5">
         <FormFields
           dataForm={dataForm}
           viewPassword={viewPassword}
           handleChange={handleChange}
         ></FormFields>
-        <ViewPassButton
-          titleButton={viewPassword ? 'Hide' : 'View'}
-          onclick={toggleViewPassword}
-        ></ViewPassButton>
-
-        <SubmitButton></SubmitButton>
+        <div className="flex-col flex items-end space-y-5">
+          <ViewPassButton
+            titleButton={viewPassword ? 'Hide' : 'View'}
+            onclick={toggleViewPassword}
+          ></ViewPassButton>
+        </div>
+        <div className="flex flex-col">
+          <SubmitButton></SubmitButton>
+        </div>
       </div>
     </form>
   );
